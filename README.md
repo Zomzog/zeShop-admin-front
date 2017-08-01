@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Zomzog/zeShop-admin-front.svg?branch=master)](https://travis-ci.org/Zomzog/zeShop-admin-front)
-[![Coverage Status](https://coveralls.io/repos/github/Zomzog/zeShop-admin-front/badge.svg?branch=)](https://coveralls.io/github/Zomzog/zeShop-admin-front?branch=)
+[![Coverage Status](https://coveralls.io/repos/github/Zomzog/zeShop-admin-front/badge.svg?branch=master)](https://coveralls.io/github/Zomzog/zeShop-admin-front?branch=master)
 [![dependencies Status](https://david-dm.org/zomzog/zeShop-admin-front/status.svg)](https://david-dm.org/zomzog/zeShop-admin-front)
 
 # AdminFront
