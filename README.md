@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/Zomzog/zeShop-admin-front.svg?branch=master)](https://travis-ci.org/Zomzog/zeShop-admin-front)
+[![dependencies Status](https://david-dm.org/zomzog/zeShop-admin-front/status.svg)](https://david-dm.org/zomzog/zeShop-admin-front)
+
 # AdminFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
