@@ -26,10 +26,9 @@ before_install:
 install:
   - yarn install
 script:
-  - ng test --watch false
-  - ng e2e
-notifications:
-  webhooks:
-    on_success: change
-    on_failure: always
-    on_start: false
+  # TODO - ng lint
+  - ng test --watch false --code-coverage
+  # TODO - ng e2e
+
+after_success:
+  - npm run coveralls
