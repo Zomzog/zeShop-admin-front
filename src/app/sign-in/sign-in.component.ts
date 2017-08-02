@@ -1,6 +1,9 @@
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { MdInputModule } from '@angular/material';
 import { Component, OnInit, NgModule } from '@angular/core';
 import { OauthService } from '../shared/oauth.service'
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'zadmin-sign-in',
@@ -39,3 +42,11 @@ export class SignInComponent implements OnInit {
       });
   }
 }
+
+
+@NgModule({
+  imports: [MdInputModule, BrowserModule, FormsModule, RouterModule],
+  exports: [SignInComponent],
+  declarations: [SignInComponent],
+})
+export class SignInModule { }

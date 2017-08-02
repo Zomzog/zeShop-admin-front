@@ -44,15 +44,28 @@ describe('NavbarComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
-  it('sign in must be show', () => {
+  it('when user is anonymous, sign in is visible and sign out is hidden', () => {
     fixture.detectChanges();
-    de = fixture.debugElement.query(By.css('#singIn'));
+    de = fixture.debugElement.query(By.css('#signIn'));
     expect(de === null).toBe(false);
+    de = fixture.debugElement.query(By.css('#signOut'));
+    expect(de === null).toBe(true);
   });
   it('sign in must be hide when user is logged in', () => { 
     isAuthenticated = true;
     fixture.detectChanges();
-    de = fixture.debugElement.query(By.css('#singIn'));
+    de = fixture.debugElement.query(By.css('#signIn'));
     expect(de === null).toBe(true);
+    de = fixture.debugElement.query(By.css('#signOut'));
+    expect(de === null).toBe(false);
+  });
+  
+  it('navbar contain logo with link to home', () => { 
+    isAuthenticated = true;
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('#logo'));
+    expect(de === null).toBe(false);
+    let logo = de.nativeElement;
+    expect(logo === null).toBe(false);
   });
 });

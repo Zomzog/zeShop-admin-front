@@ -1,3 +1,4 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { Cart } from './../shared/cart.model';
 import { CartService } from './../shared/cartservice';
 import {Component, NgModule, OnInit} from '@angular/core';
@@ -20,7 +21,7 @@ export class HomeComponent implements OnInit {
 }
 
 @NgModule({
-  imports: [RouterModule],
+  imports: [BrowserModule, RouterModule],
   exports: [HomeComponent],
   declarations: [HomeComponent],
 })
